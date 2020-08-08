@@ -4,3 +4,7 @@ Homestead.json
 Homestead.yaml
 .env
 .phpunit.result.cache
+docker-compose.override.yml
+.php_cs.cache
+http-client.private.env.json
+
