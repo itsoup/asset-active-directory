@@ -1,0 +1,45 @@
+version: "3.7"
+
+services:
+  server:
+    image: nginx
+    expose:
+      - 80
+    volumes:
+      - ./.docker/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./.docker/server.conf:/etc/nginx/conf.d/server.conf:ro
+      - ./:/var/www/html
+    restart: unless-stopped
+    networks:
+      - app_network
+
+  app:
+    image: josepostiga/php:7.4-fpm
+    user: "1000:1000"
+    expose:
+      - 9000
+    volumes:
+      - ./:/var/www/html
+    restart: unless-stopped
+    networks:
+      - app_network
+      - data_network
+
+  db:
+    image: mariadb
+    environment:
+      MYSQL_DATABASE: asset-active-directory
+    expose:
+      - 3306
+    volumes:
+      - itsoup-asset-active-directory-db:/var/lib/mysql
+    restart: unless-stopped
+    networks:
+      - data_network
+
+volumes:
+  itsoup-organization-db:
+
+networks:
+  app_network:
+  data_network:

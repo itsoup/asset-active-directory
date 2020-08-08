@@ -1,0 +1,27 @@
+version: "3.7"
+
+services:
+  server:
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.itsoup-aad.entrypoints=http"
+      - "traefik.http.routers.itsoup-aad.rule=Host(`asset-active.directory.itsoup.test`)"
+      - "traefik.http.services.itsoup-aad.loadbalancer.healthcheck.path=/health-check"
+      - "traefik.http.services.itsoup-aad.loadbalancer.healthcheck.interval=60s"
+    networks:
+      - web
+
+  db:
+    ports:
+      - 33061:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: organization
+    networks:
+      - infraspeak
+
+networks:
+  web:
+    external: true
+  infraspeak:
+    external: true
