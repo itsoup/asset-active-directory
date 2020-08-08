@@ -1,24 +1,43 @@
-# Lumen PHP Framework
+# ITsoup's Asset Active Directory domain service
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
+![Run tests](https://github.com/itsoup/asset-active-directory/workflows/Run%20tests/badge.svg)
+[![Coverage Status](https://coveralls.io/repos/github/itsoup/asset-active-directory/badge.svg?branch=master)](https://coveralls.io/github/itsoup/asset-active-directory?branch=master)
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+For detailed information, check the [documentation](https://github.com/itsoup/asset-active-directory/wiki).   
 
-## Official Documentation
+## Installation
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
+Refer to the [documentation](https://github.com/itsoup/asset-active-directory/wiki/Installation) to see how to install and activate this service.
+
+## Testing
+
+This project is fully tested. We have an [automatic pipeline](https://github.com/itsoup/asset-active-directory/actions) and an [automatic code quality analysis](https://coveralls.io/github/itsoup/asset-active-directory) tool set up to continuously test and assert the quality of all code published in this repository, but you can execute the test suite yourself by running the following command:
+
+``` bash
+vendor/bin/phpunit
+```
+
+_Note: This assumes you've run `composer install` (without the `--no-dev` option)._
+
+**We aim to keep the master branch always deployable.** Exceptions may happen, but they should be extremely rare.
+
+## Changelog
+
+Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
 
 ## Contributing
 
-Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
-## Security Vulnerabilities
+## Security
 
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+Please see [SECURITY](SECURITY.md) for details.
+
+## Credits
+
+- [José Postiga](https://github.com/josepostiga)
+- [All Contributors](../../contributors)
 
 ## License
 
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The MIT License (MIT).
