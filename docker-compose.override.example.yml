@@ -4,19 +4,19 @@ services:
   server:
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.itsoup-organization.entrypoints=http"
-      - "traefik.http.routers.itsoup-organization.rule=Host(`organization.itsoup.test`)"
-      - "traefik.http.services.itsoup-organization.loadbalancer.healthcheck.path=/health-check"
-      - "traefik.http.services.itsoup-organization.loadbalancer.healthcheck.interval=60s"
+      - "traefik.http.routers.itsoup-asset-active-directory.entrypoints=http"
+      - "traefik.http.routers.itsoup-asset-active-directory.rule=Host(`organization.itsoup.test`)"
+      - "traefik.http.services.itsoup-asset-active-directory.loadbalancer.healthcheck.path=/health-check"
+      - "traefik.http.services.itsoup-asset-active-directory.loadbalancer.healthcheck.interval=60s"
     networks:
       - web
 
   db:
     ports:
-      - 33061:3306
+      - 33062:3306
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: organization
+      MYSQL_DATABASE: asset_active_directory
     networks:
       - maintenance
 

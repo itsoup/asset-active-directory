@@ -28,7 +28,7 @@ services:
   db:
     image: mariadb
     environment:
-      MYSQL_DATABASE: asset-active-directory
+      MYSQL_DATABASE: asset_active_directory
     expose:
       - 3306
     volumes:
@@ -38,7 +38,7 @@ services:
       - data_network
 
 volumes:
-  itsoup-organization-db:
+  itsoup-asset-active-directory-db:
 
 networks:
   app_network:
