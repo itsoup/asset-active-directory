@@ -4,10 +4,10 @@ services:
   server:
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.itsoup-asset-active-directory.entrypoints=http"
-      - "traefik.http.routers.itsoup-asset-active-directory.rule=Host(`organization.itsoup.test`)"
-      - "traefik.http.services.itsoup-asset-active-directory.loadbalancer.healthcheck.path=/health-check"
-      - "traefik.http.services.itsoup-asset-active-directory.loadbalancer.healthcheck.interval=60s"
+      - "traefik.http.routers.itsoup-assets-active-directory.entrypoints=http"
+      - "traefik.http.routers.itsoup-assets-active-directory.rule=Host(`assets-active-directory.itsoup.test`)"
+      - "traefik.http.services.itsoup-assets-active-directory.loadbalancer.healthcheck.path=/health-check"
+      - "traefik.http.services.itsoup-assets-active-directory.loadbalancer.healthcheck.interval=60s"
     networks:
       - web
 
