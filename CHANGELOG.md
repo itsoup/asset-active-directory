@@ -6,7 +6,7 @@ All notable changes to this repository will be documented in this file.
 
 ### Added
 
-- N/A
+- `josepostiga/larabeat` package for health-check
 
 ### Changed
 
