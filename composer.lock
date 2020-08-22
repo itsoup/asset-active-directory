@@ -1540,16 +1540,16 @@
         },
         {
             "name": "josepostiga/larabeat",
-            "version": "v1.0.2",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/josepostiga/larabeat.git",
-                "reference": "6289cc5dcb89dac1724bea820814bdbcd2cc890d"
+                "reference": "0fbac8d6313b8fd01e9698a18c8072d9a0bfbfe5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/josepostiga/larabeat/zipball/6289cc5dcb89dac1724bea820814bdbcd2cc890d",
-                "reference": "6289cc5dcb89dac1724bea820814bdbcd2cc890d",
+                "url": "https://api.github.com/repos/josepostiga/larabeat/zipball/0fbac8d6313b8fd01e9698a18c8072d9a0bfbfe5",
+                "reference": "0fbac8d6313b8fd01e9698a18c8072d9a0bfbfe5",
                 "shasum": ""
             },
             "require": {
@@ -1563,7 +1563,7 @@
             "extra": {
                 "laravel": {
                     "providers": [
-                        "LarabeatServiceProvider"
+                        "JosePostiga\\Larabeat\\LarabeatServiceProvider"
                     ]
                 }
             },
@@ -1599,7 +1599,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-08-22T15:10:47+00:00"
+            "time": "2020-08-22T15:24:03+00:00"
         },
         {
             "name": "laravel/lumen-framework",
