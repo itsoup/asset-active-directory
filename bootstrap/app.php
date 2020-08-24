@@ -91,7 +91,6 @@ $app->configure('app');
 |
 */
 
- $app->register(App\Providers\AuthServiceProvider::class);
  $app->register(\JosePostiga\Larabeat\LarabeatServiceProvider::class);
 
 /*
