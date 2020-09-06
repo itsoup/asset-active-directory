@@ -7,6 +7,7 @@
     "require": {
         "php": "^7.4",
         "ext-json": "*",
+        "josepostiga/jwt-bouncer": "^1.0",
         "josepostiga/larabeat": "^1.0",
         "laravel/lumen-framework": "^7.0",
         "lcobucci/jwt": "^3.3"

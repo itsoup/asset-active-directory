@@ -92,6 +92,7 @@ $app->configure('app');
 */
 
  $app->register(\JosePostiga\Larabeat\LarabeatServiceProvider::class);
+ $app->register(\JosePostiga\JwtBouncer\JwtBouncerServiceProvider::class);
 
 /*
 |--------------------------------------------------------------------------
