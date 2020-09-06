@@ -1540,16 +1540,16 @@
         },
         {
             "name": "josepostiga/jwt-bouncer",
-            "version": "v1.0.3",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/josepostiga/jwt-bouncer.git",
-                "reference": "337fb0c58ddb3d53331fc2fe9c75e220a7c327ed"
+                "reference": "c3e380014d338a27603afb1c2f85904644006814"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/josepostiga/jwt-bouncer/zipball/337fb0c58ddb3d53331fc2fe9c75e220a7c327ed",
-                "reference": "337fb0c58ddb3d53331fc2fe9c75e220a7c327ed",
+                "url": "https://api.github.com/repos/josepostiga/jwt-bouncer/zipball/c3e380014d338a27603afb1c2f85904644006814",
+                "reference": "c3e380014d338a27603afb1c2f85904644006814",
                 "shasum": ""
             },
             "require": {
@@ -1600,7 +1600,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-06T22:16:40+00:00"
+            "time": "2020-09-06T23:09:00+00:00"
         },
         {
             "name": "josepostiga/larabeat",
