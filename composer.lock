@@ -1540,16 +1540,16 @@
         },
         {
             "name": "josepostiga/jwt-bouncer",
-            "version": "v1.0.4",
+            "version": "v1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/josepostiga/jwt-bouncer.git",
-                "reference": "c3e380014d338a27603afb1c2f85904644006814"
+                "reference": "bd8e54748a458946e3ebd012a06f785b924a2d2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/josepostiga/jwt-bouncer/zipball/c3e380014d338a27603afb1c2f85904644006814",
-                "reference": "c3e380014d338a27603afb1c2f85904644006814",
+                "url": "https://api.github.com/repos/josepostiga/jwt-bouncer/zipball/bd8e54748a458946e3ebd012a06f785b924a2d2a",
+                "reference": "bd8e54748a458946e3ebd012a06f785b924a2d2a",
                 "shasum": ""
             },
             "require": {
@@ -1581,16 +1581,18 @@
             "authors": [
                 {
                     "name": "José Postiga",
-                    "email": "me@josepostiga.com",
+                    "email": "iamjosepostiga@gmail.com",
                     "homepage": "https://josepostiga.com"
                 }
             ],
-            "description": "A verification package for your JWT authenticated requests.",
+            "description": "A JWT authorization guard for your Laravel/Lumen apps.",
             "homepage": "https://github.com/josepostiga/jwt-bouncer",
             "keywords": [
+                "authorization",
                 "jwt",
                 "jwt-bouncer",
                 "laravel",
+                "lumen",
                 "package",
                 "php"
             ],
@@ -1600,7 +1602,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-06T23:09:00+00:00"
+            "time": "2020-09-06T23:24:19+00:00"
         },
         {
             "name": "josepostiga/larabeat",
