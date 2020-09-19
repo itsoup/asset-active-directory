@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Domains\Locations\Models\Location;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Validation\Rule;
 
 class LocationsStoreController extends Controller
 {
@@ -21,7 +22,9 @@ class LocationsStoreController extends Controller
         $this->validate($request, [
             'parent_id' => [
                 'nullable',
-                'exists:locations',
+                'integer',
+                Rule::exists('locations', 'id')
+                    ->where('customer_id', $request->user()->customer_id),
             ],
             'customer_id' => [
                 'required',

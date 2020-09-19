@@ -28,6 +28,12 @@ class LocationModelTest extends TestCase
     }
 
     /** @test */
+    public function it_uses_correct_table(): void
+    {
+        self::assertEquals('locations', $this->model->getTable());
+    }
+
+    /** @test */
     public function it_uses_timestamps(): void
     {
         self::assertTrue($this->model->usesTimestamps());
