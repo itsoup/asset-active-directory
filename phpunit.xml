@@ -28,6 +28,7 @@
         <server name="APP_ENV" value="testing"/>
         <server name="APP_KEY" value="base64:gC38CkQRKoFz2BjNOUWhkomX3MXBg4NedkXj8sxqZ5E="/>
         <server name="AUTH_GUARD" value="jwt"/>
+        <server name="JWT_SCOPES" value="asset-active-directory:locations:view,asset-active-directory:locations:manage"/>
         <server name="CACHE_DRIVER" value="array"/>
         <server name="DB_CONNECTION" value="sqlite"/>
         <server name="DB_DATABASE" value=":memory:"/>
