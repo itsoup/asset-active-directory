@@ -24,7 +24,6 @@ $app = new Laravel\Lumen\Application(
 );
 
 $app->withFacades();
-
 $app->withEloquent();
 
 /*
@@ -73,10 +72,6 @@ $app->configure('auth');
 |
 */
 
-// $app->middleware([
-//     App\Http\Middleware\ExampleMiddleware::class
-// ]);
-
  $app->routeMiddleware([
      'auth' => App\Http\Middleware\Authenticate::class,
  ]);
@@ -94,6 +89,7 @@ $app->configure('auth');
 
  $app->register(\JosePostiga\Larabeat\LarabeatServiceProvider::class);
  $app->register(\JosePostiga\JwtBouncer\JwtBouncerServiceProvider::class);
+ $app->register(\Domains\Locations\LocationsServiceProvider::class);
 
 /*
 |--------------------------------------------------------------------------

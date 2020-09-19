@@ -7,6 +7,7 @@ All notable changes to this repository will be documented in this file.
 ### Added
 
 - `josepostiga/larabeat` package for health-check
+- An authorized User can create new Location resource (#1)
 
 ### Changed
 
